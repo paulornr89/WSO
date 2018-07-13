@@ -30,9 +30,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Person -->
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pessoa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pessoa"/>
 </rdf:RDF>
 
 
