@@ -4,18 +4,340 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY peleontology "http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#" >
 ]>
 
 
 <rdf:RDF xmlns="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#"
      xml:base="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:peleontology="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#capitalDe -->
+
+    <owl:ObjectProperty rdf:about="#capitalDe">
+        <rdfs:domain rdf:resource="#Cidade"/>
+        <rdfs:range rdf:resource="#Estado"/>
+        <rdfs:range rdf:resource="#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#estaEm -->
+
+    <owl:ObjectProperty rdf:about="#estaEm">
+        <rdfs:range rdf:resource="#Cidade"/>
+        <rdfs:domain rdf:resource="#Local"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#estajogandoEm -->
+
+    <owl:ObjectProperty rdf:about="#estajogandoEm">
+        <rdfs:range rdf:resource="#Clube"/>
+        <rdfs:domain rdf:resource="#Jogador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#jogouEm -->
+
+    <owl:ObjectProperty rdf:about="#jogouEm">
+        <rdfs:range rdf:resource="#Clube"/>
+        <rdfs:range rdf:resource="#ClubeNacional"/>
+        <rdfs:domain rdf:resource="#Jogador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#localFalecimento -->
+
+    <owl:ObjectProperty rdf:about="#localFalecimento">
+        <rdfs:range rdf:resource="#Cidade"/>
+        <rdfs:domain rdf:resource="#Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#localNascimento -->
+
+    <owl:ObjectProperty rdf:about="#localNascimento">
+        <rdfs:range rdf:resource="#Cidade"/>
+        <rdfs:domain rdf:resource="#Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#nacionalidade -->
+
+    <owl:ObjectProperty rdf:about="#nacionalidade">
+        <rdfs:range rdf:resource="#Pais"/>
+        <rdfs:domain rdf:resource="#Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#parteContinente -->
+
+    <owl:ObjectProperty rdf:about="#parteContinente">
+        <rdfs:range rdf:resource="#Continente"/>
+        <rdfs:domain rdf:resource="#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#parteEstado -->
+
+    <owl:ObjectProperty rdf:about="#parteEstado">
+        <rdfs:domain rdf:resource="#Cidade"/>
+        <rdfs:range rdf:resource="#Estado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#partePais -->
+
+    <owl:ObjectProperty rdf:about="#partePais">
+        <rdfs:domain rdf:resource="#Estado"/>
+        <rdfs:range rdf:resource="#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#participaDe -->
+
+    <owl:ObjectProperty rdf:about="#participaDe">
+        <rdfs:range rdf:resource="#Campeonato"/>
+        <rdfs:domain rdf:resource="#Clube"/>
+        <rdfs:domain rdf:resource="#ClubeNacional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#possuiUm -->
+
+    <owl:ObjectProperty rdf:about="#possuiUm">
+        <rdfs:domain rdf:resource="#Clube"/>
+        <rdfs:range rdf:resource="#Estadio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#presideUm -->
+
+    <owl:ObjectProperty rdf:about="#presideUm">
+        <rdfs:range rdf:resource="#AssociacaoEsportiva"/>
+        <rdfs:domain rdf:resource="#Pessoa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#sede -->
+
+    <owl:ObjectProperty rdf:about="#sede">
+        <rdfs:domain rdf:resource="#Campeonato"/>
+        <rdfs:range rdf:resource="#Pais"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#treinaUm -->
+
+    <owl:ObjectProperty rdf:about="#treinaUm">
+        <rdfs:range rdf:resource="#Clube"/>
+        <rdfs:range rdf:resource="#ClubeNacional"/>
+        <rdfs:domain rdf:resource="#Treinador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#altura -->
+
+    <owl:DatatypeProperty rdf:about="#altura">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#apelido -->
+
+    <owl:DatatypeProperty rdf:about="#apelido">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#area -->
+
+    <owl:DatatypeProperty rdf:about="#area">
+        <rdfs:domain rdf:resource="#Cidade"/>
+        <rdfs:domain rdf:resource="#Estado"/>
+        <rdfs:domain rdf:resource="#Pais"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataFalecimento -->
+
+    <owl:DatatypeProperty rdf:about="#dataFalecimento">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataFim -->
+
+    <owl:DatatypeProperty rdf:about="#dataFim">
+        <rdfs:domain rdf:resource="#Evento"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataInicio -->
+
+    <owl:DatatypeProperty rdf:about="#dataInicio">
+        <rdfs:domain rdf:resource="#Evento"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataNascimento -->
+
+    <owl:DatatypeProperty rdf:about="#dataNascimento">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#golsClube -->
+
+    <owl:DatatypeProperty rdf:about="#golsClube">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#linguaOficial -->
+
+    <owl:DatatypeProperty rdf:about="#linguaOficial">
+        <rdfs:domain rdf:resource="#Pais"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#moeda -->
+
+    <owl:DatatypeProperty rdf:about="#moeda">
+        <rdfs:domain rdf:resource="#Pais"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#nome -->
+
+    <owl:DatatypeProperty rdf:about="#nome">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#numeroCamisa -->
+
+    <owl:DatatypeProperty rdf:about="#numeroCamisa">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#peChute -->
+
+    <owl:DatatypeProperty rdf:about="#peChute">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#peso -->
+
+    <owl:DatatypeProperty rdf:about="#peso">
+        <rdfs:domain rdf:resource="#Pessoa"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#populacao -->
+
+    <owl:DatatypeProperty rdf:about="#populacao">
+        <rdfs:domain rdf:resource="#Cidade"/>
+        <rdfs:domain rdf:resource="#Estado"/>
+        <rdfs:domain rdf:resource="#Pais"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#salario -->
+
+    <owl:DatatypeProperty rdf:about="#salario">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#totalGols -->
+
+    <owl:DatatypeProperty rdf:about="#totalGols">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -30,12 +352,125 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#AssociacaoEsportiva -->
+
+    <owl:Class rdf:about="#AssociacaoEsportiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Campeonato -->
+
+    <owl:Class rdf:about="#Campeonato">
+        <rdfs:subClassOf rdf:resource="#Evento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Cidade -->
+
+    <owl:Class rdf:about="#Cidade">
+        <rdfs:subClassOf rdf:resource="#Estado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Clube -->
+
+    <owl:Class rdf:about="#Clube">
+        <rdfs:subClassOf rdf:resource="#AssociacaoEsportiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#ClubeNacional -->
+
+    <owl:Class rdf:about="#ClubeNacional">
+        <rdfs:subClassOf rdf:resource="#AssociacaoEsportiva"/>
+        <owl:disjointWith rdf:resource="#Clube"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Continente -->
+
+    <owl:Class rdf:about="#Continente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Copa -->
+
+    <owl:Class rdf:about="#Copa">
+        <rdfs:subClassOf rdf:resource="#Campeonato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Estadio -->
+
+    <owl:Class rdf:about="#Estadio">
+        <rdfs:subClassOf rdf:resource="#Local"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Estado -->
+
+    <owl:Class rdf:about="#Estado">
+        <rdfs:subClassOf rdf:resource="#Pais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Evento -->
+
+    <owl:Class rdf:about="#Evento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Jogador -->
+
+    <owl:Class rdf:about="#Jogador">
+        <rdfs:subClassOf rdf:resource="#Pessoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Liga -->
+
+    <owl:Class rdf:about="#Liga">
+        <rdfs:subClassOf rdf:resource="#Campeonato"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Local -->
+
+    <owl:Class rdf:about="#Local"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pais -->
+
+    <owl:Class rdf:about="#Pais">
+        <rdfs:subClassOf rdf:resource="#Continente"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pessoa -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pessoa"/>
+    <owl:Class rdf:about="#Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Treinador -->
+
+    <owl:Class rdf:about="#Treinador">
+        <rdfs:subClassOf rdf:resource="#Pessoa"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
 
