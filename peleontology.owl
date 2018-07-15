@@ -323,6 +323,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#posicao -->
+
+    <owl:DatatypeProperty rdf:about="#posicao">
+        <rdfs:domain rdf:resource="#Jogador"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#salario -->
 
     <owl:DatatypeProperty rdf:about="#salario">
@@ -468,6 +477,243 @@
     <owl:Class rdf:about="#Treinador">
         <rdfs:subClassOf rdf:resource="#Pessoa"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Alemanha -->
+
+    <owl:Thing rdf:about="#Alemanha">
+        <rdf:type rdf:resource="#Pais"/>
+        <area rdf:datatype="&xsd;double">357051</area>
+        <populacao rdf:datatype="&xsd;double">82521700</populacao>
+        <linguaOficial rdf:datatype="&xsd;string">Alem&#227;o</linguaOficial>
+        <moeda rdf:datatype="&xsd;string">Euro</moeda>
+        <parteContinente rdf:resource="#Europa"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#America_Do_Sul -->
+
+    <owl:Thing rdf:about="#America_Do_Sul">
+        <rdf:type rdf:resource="#Continente"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Arena -->
+
+    <owl:Thing rdf:about="#Arena">
+        <rdf:type rdf:resource="#Estadio"/>
+        <estaEm rdf:resource="#Porto_Alegre"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Argentina -->
+
+    <Pais rdf:about="#Argentina">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <area rdf:datatype="&xsd;double">2780400</area>
+        <populacao rdf:datatype="&xsd;double">43590368 </populacao>
+        <linguaOficial rdf:datatype="&xsd;string">Espanhol</linguaOficial>
+        <moeda rdf:datatype="&xsd;string">Peso Argentino</moeda>
+        <parteContinente rdf:resource="#America_Do_Sul"/>
+    </Pais>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Bayern_de_Munique -->
+
+    <Clube rdf:about="#Bayern_de_Munique">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Brasil -->
+
+    <Pais rdf:about="#Brasil">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <populacao rdf:datatype="&xsd;double">207660929</populacao>
+        <area rdf:datatype="&xsd;double">8515767</area>
+        <linguaOficial rdf:datatype="&xsd;string">Portugues</linguaOficial>
+        <moeda rdf:datatype="&xsd;string">Real</moeda>
+        <parteContinente rdf:resource="#America_Do_Sul"/>
+    </Pais>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Caxias_do_Sul -->
+
+    <Cidade rdf:about="#Caxias_do_Sul">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Douglas_Costa -->
+
+    <owl:Thing rdf:about="#Douglas_Costa">
+        <rdf:type rdf:resource="#Jogador"/>
+        <totalGols rdf:datatype="&xsd;int"></totalGols>
+        <altura rdf:datatype="&xsd;float">1,70</altura>
+        <numeroCamisa rdf:datatype="&xsd;int">11</numeroCamisa>
+        <dataNascimento rdf:datatype="&xsd;date">24/09/1990</dataNascimento>
+        <totalGols rdf:datatype="&xsd;int">72</totalGols>
+        <posicao rdf:datatype="&xsd;string">Atacante</posicao>
+        <apelido rdf:datatype="&xsd;int">Douglas Costa</apelido>
+        <nome rdf:datatype="&xsd;string"
+            >Douglas Costa de Souza</nome>
+        <peChute rdf:datatype="&xsd;string">esquerdo</peChute>
+        <jogouEm rdf:resource="#Bayern_de_Munique"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <estajogandoEm rdf:resource="#Juventus_Football_Club"/>
+        <localNascimento rdf:resource="#Sapucaia_do_Sul"/>
+        <jogouEm rdf:resource="#Sele&#231;&#227;o_Brasileira"/>
+        <jogouEm rdf:resource="#Shakhtar_Donetsk"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Europa -->
+
+    <owl:Thing rdf:about="#Europa">
+        <rdf:type rdf:resource="#Continente"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Gr&#234;mio_Foot-Ball_Porto_Alegrense -->
+
+    <Clube rdf:about="#Gr&#234;mio_Foot-Ball_Porto_Alegrense">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <possuiUm rdf:resource="#Arena"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#It&#225;lia -->
+
+    <owl:Thing rdf:about="#It&#225;lia">
+        <rdf:type rdf:resource="#Pais"/>
+        <area rdf:datatype="&xsd;double">301338</area>
+        <populacao rdf:datatype="&xsd;double">60665551</populacao>
+        <moeda rdf:datatype="&xsd;string">Euro</moeda>
+        <linguaOficial rdf:datatype="&xsd;string">Italiano</linguaOficial>
+        <parteContinente rdf:resource="#Europa"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Juventus_Football_Club -->
+
+    <Clube rdf:about="#Juventus_Football_Club">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#It&#225;lia"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Pelotas -->
+
+    <owl:Thing rdf:about="#Pelotas">
+        <rdf:type rdf:resource="#Cidade"/>
+        <area rdf:datatype="&xsd;double">1608,768</area>
+        <populacao rdf:datatype="&xsd;double">343651</populacao>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Porto_Alegre -->
+
+    <Cidade rdf:about="#Porto_Alegre">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <populacao rdf:datatype="&xsd;double">1484941</populacao>
+        <area rdf:datatype="&xsd;double">496,682</area>
+        <capitalDe rdf:resource="#Rio_Grande_do_Sul"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Rio_Grande_do_Sul -->
+
+    <owl:Thing rdf:about="#Rio_Grande_do_Sul">
+        <rdf:type rdf:resource="#Estado"/>
+        <populacao rdf:datatype="&xsd;double">11286500 </populacao>
+        <area rdf:datatype="&xsd;double">281730,323</area>
+        <partePais rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sapucaia_do_Sul -->
+
+    <Cidade rdf:about="#Sapucaia_do_Sul">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <populacao rdf:datatype="&xsd;double">137750</populacao>
+        <area rdf:datatype="&xsd;double">58,31</area>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sele&#231;&#227;o_Brasileira -->
+
+    <owl:Thing rdf:about="#Sele&#231;&#227;o_Brasileira">
+        <rdf:type rdf:resource="#ClubeNacional"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Shakhtar_Donetsk -->
+
+    <Clube rdf:about="#Shakhtar_Donetsk">
+        <rdf:type rdf:resource="&owl;Thing"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Ucrania -->
+
+    <owl:Thing rdf:about="#Ucrania">
+        <rdf:type rdf:resource="#Pais"/>
+        <populacao rdf:datatype="&xsd;double">44429471</populacao>
+        <area rdf:datatype="&xsd;double">603628</area>
+        <moeda rdf:datatype="&xsd;string">Grivinia</moeda>
+        <linguaOficial rdf:datatype="&xsd;string">Ucraniano</linguaOficial>
+        <parteContinente rdf:resource="#Europa"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Uruguai -->
+
+    <Pais rdf:about="#Uruguai">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <area rdf:datatype="&xsd;double">176.215</area>
+        <populacao rdf:datatype="&xsd;double">3351016</populacao>
+        <linguaOficial rdf:datatype="&xsd;string">Espanhol</linguaOficial>
+        <moeda rdf:datatype="&xsd;string">Peso Uruguaio</moeda>
+        <parteContinente rdf:resource="#America_Do_Sul"/>
+    </Pais>
 </rdf:RDF>
 
 
