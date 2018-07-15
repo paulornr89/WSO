@@ -8,6 +8,7 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY peleontology "http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#" >
+    <!ENTITY peleontology2 "http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#15" >
 ]>
 
 
@@ -18,7 +19,8 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:peleontology2="&peleontology;15">
     <owl:Ontology rdf:about=""/>
     
 
@@ -491,6 +493,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#15_de_Novembro -->
+
+    <Clube rdf:about="#15_de_Novembro">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Alemanha -->
 
     <owl:Thing rdf:about="#Alemanha">
@@ -504,10 +515,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Alfredo_Jaconi -->
+
+    <owl:Thing rdf:about="#Alfredo_Jaconi">
+        <rdf:type rdf:resource="#Estadio"/>
+        <estaEm rdf:resource="#Caxias_do_Sul"/>
+    </owl:Thing>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#America_Do_Sul -->
 
     <owl:Thing rdf:about="#America_Do_Sul">
         <rdf:type rdf:resource="#Continente"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Aranua -->
+
+    <owl:Thing rdf:about="#Aranua">
+        <rdf:type rdf:resource="#Cidade"/>
+        <parteEstado rdf:resource="#Goias"/>
     </owl:Thing>
     
 
@@ -534,11 +563,71 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Arilson_Gilberto_da_Costa -->
+
+    <Jogador rdf:about="#Arilson_Gilberto_da_Costa">
+        <rdf:type rdf:resource="#Treinador"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <altura rdf:datatype="&xsd;float">1,77</altura>
+        <dataNascimento rdf:datatype="&xsd;date">11/06/1973</dataNascimento>
+        <apelido rdf:datatype="&xsd;string">Ar&#237;lson</apelido>
+        <nome rdf:datatype="&xsd;string"
+            >Ar&#237;lson Gilberto da Costa </nome>
+        <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
+        <posicao rdf:datatype="&xsd;string">Meia</posicao>
+        <localNascimento rdf:resource="#Bento_Gon&#231;alves"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <treinaUm rdf:resource="#Clube_Esportivo_Aimor&#233;"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Atl&#233;tico_Farroupilha"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <jogouEm rdf:resource="#Sele&#231;&#227;o_Brasileira"/>
+        <jogouEm rdf:resource="#Sociedade_Esportiva_Palmeiras"/>
+        <jogouEm rdf:resource="#Sport_Club_Internacional"/>
+    </Jogador>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Bayern_de_Munique -->
 
     <Clube rdf:about="#Bayern_de_Munique">
         <rdf:type rdf:resource="&owl;Thing"/>
     </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Beira_Rio -->
+
+    <Estadio rdf:about="#Beira_Rio">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <estaEm rdf:resource="#Porto_Alegre"/>
+    </Estadio>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Bento_Freitas -->
+
+    <owl:Thing rdf:about="#Bento_Freitas">
+        <rdf:type rdf:resource="#Estadio"/>
+        <estaEm rdf:resource="#Pelotas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Bento_Gon&#231;alves -->
+
+    <owl:Thing rdf:about="#Bento_Gon&#231;alves">
+        <rdf:type rdf:resource="#Cidade"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Boca_do_Lobo -->
+
+    <owl:Thing rdf:about="#Boca_do_Lobo">
+        <rdf:type rdf:resource="#Estadio"/>
+        <estaEm rdf:resource="#Pelotas"/>
+    </owl:Thing>
     
 
 
@@ -555,12 +644,162 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Carlos_Alberto_Rodrigues_Gavi&#227;o -->
+
+    <owl:Thing rdf:about="#Carlos_Alberto_Rodrigues_Gavi&#227;o">
+        <rdf:type rdf:resource="#Jogador"/>
+        <dataNascimento rdf:datatype="&xsd;date">02/02/1980</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1,80</altura>
+        <totalGols rdf:datatype="&xsd;int">9</totalGols>
+        <nome rdf:datatype="&xsd;string"
+            >Carlos Alberto Rodrigues Gavi&#227;o</nome>
+        <apelido rdf:datatype="&xsd;string">Gavi&#227;o</apelido>
+        <posicao rdf:datatype="&xsd;string">Volante</posicao>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Clube_Esportivo_Bento_Gon&#231;alves"/>
+        <jogouEm rdf:resource="#Crici&#250;ma_Esporte_Clube"/>
+        <jogouEm rdf:resource="#Esporte_Clube_Pelotas"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <localNascimento rdf:resource="#Itaqui"/>
+        <jogouEm rdf:resource="#Santos_Futebol_Clube"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Carlos_Miguel -->
+
+    <Jogador rdf:about="#Carlos_Miguel">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <altura rdf:datatype="&xsd;float">1,77</altura>
+        <dataNascimento rdf:datatype="&xsd;date">12/06/1972</dataNascimento>
+        <totalGols rdf:datatype="&xsd;int">18</totalGols>
+        <apelido rdf:datatype="&xsd;string">Carlos Miguel</apelido>
+        <nome rdf:datatype="&xsd;string"
+            >Carlos Miguel da Silva J&#250;nior</nome>
+        <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
+        <posicao rdf:datatype="&xsd;string">Meia</posicao>
+        <localNascimento rdf:resource="#Bento_Gon&#231;alves"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <jogouEm rdf:resource="#Sport_Club_Internacional"/>
+        <jogouEm rdf:resource="#S&#227;o_Paulo_Futebol_Clube"/>
+    </Jogador>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Caxias_do_Sul -->
 
     <Cidade rdf:about="#Caxias_do_Sul">
         <rdf:type rdf:resource="&owl;Thing"/>
         <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
     </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Club_de_Regatas_Vasco_da_Gama -->
+
+    <owl:Thing rdf:about="#Club_de_Regatas_Vasco_da_Gama">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Clube_Atl&#233;tico_Mineiro -->
+
+    <owl:Thing rdf:about="#Clube_Atl&#233;tico_Mineiro">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Clube_Esportivo_Aimor&#233; -->
+
+    <Clube rdf:about="#Clube_Esportivo_Aimor&#233;">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Clube_Esportivo_Bento_Gon&#231;alves -->
+
+    <Clube rdf:about="#Clube_Esportivo_Bento_Gon&#231;alves">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Clube_de_Regatas_do_Flamengo -->
+
+    <owl:Thing rdf:about="#Clube_de_Regatas_do_Flamengo">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Cl&#225;udio_Pitbull -->
+
+    <owl:Thing rdf:about="#Cl&#225;udio_Pitbull">
+        <rdf:type rdf:resource="#Jogador"/>
+        <dataNascimento rdf:datatype="&xsd;date">08/01/1982</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1,73</altura>
+        <totalGols rdf:datatype="&xsd;int">55</totalGols>
+        <posicao rdf:datatype="&xsd;string">Atacante</posicao>
+        <nome rdf:datatype="&xsd;string"
+            >Cl&#225;udio Mejolaro </nome>
+        <peChute rdf:datatype="&xsd;string">Direito</peChute>
+        <apelido rdf:datatype="&xsd;string">Pitbull</apelido>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Esporte_Clube_Juventude"/>
+        <jogouEm rdf:resource="#Fluminense_Football_Club"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <localNascimento rdf:resource="#Porto_Alegre"/>
+        <jogouEm rdf:resource="#Santos_Futebol_Clube"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Crici&#250;ma_Esporte_Clube -->
+
+    <owl:Thing rdf:about="#Crici&#250;ma_Esporte_Clube">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Crissiumal_ -->
+
+    <Cidade rdf:about="#Crissiumal_">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Danrlei -->
+
+    <Jogador rdf:about="#Danrlei">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <numeroCamisa rdf:datatype="&xsd;int">1</numeroCamisa>
+        <altura rdf:datatype="&xsd;float">1,85</altura>
+        <dataNascimento rdf:datatype="&xsd;date">18/04/1973</dataNascimento>
+        <apelido rdf:datatype="&xsd;string">Danrlei</apelido>
+        <nome rdf:datatype="&xsd;string"
+            >Danrlei de Deus Hinterholz </nome>
+        <peChute rdf:datatype="&xsd;string">Direito</peChute>
+        <posicao rdf:datatype="&xsd;string">Goleiro</posicao>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Clube_Atl&#233;tico_Mineiro"/>
+        <localNascimento rdf:resource="#Crissiumal_"/>
+        <jogouEm rdf:resource="#Fluminense_Football_Club"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Esportivo_Brasil"/>
+        <jogouEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+    </Jogador>
     
 
 
@@ -589,10 +828,133 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Dunga -->
+
+    <Treinador rdf:about="#Dunga">
+        <rdf:type rdf:resource="#Jogador"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <altura rdf:datatype="&xsd;float">1,76</altura>
+        <dataNascimento rdf:datatype="&xsd;date">31/10/1963</dataNascimento>
+        <totalGols rdf:datatype="&xsd;int">47</totalGols>
+        <numeroCamisa rdf:datatype="&xsd;int">5</numeroCamisa>
+        <nome rdf:datatype="&xsd;string"
+            >Carlos Caetano Bledorn Verri</nome>
+        <peChute rdf:datatype="&xsd;string">Direito</peChute>
+        <apelido rdf:datatype="&xsd;string">Dunga</apelido>
+        <posicao rdf:datatype="&xsd;string">Volante</posicao>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Club_de_Regatas_Vasco_da_Gama"/>
+        <localNascimento rdf:resource="#Iju&#237;"/>
+        <jogouEm rdf:resource="#Santos_Futebol_Clube"/>
+        <jogouEm rdf:resource="#Sport_Club_Corinthians_Paulista"/>
+        <jogouEm rdf:resource="#Sport_Club_Internacional"/>
+    </Treinador>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Erechim -->
+
+    <Cidade rdf:about="#Erechim">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Esporte_Clube_Juventude -->
+
+    <owl:Thing rdf:about="#Esporte_Clube_Juventude">
+        <rdf:type rdf:resource="#Clube"/>
+        <possuiUm rdf:resource="#Alfredo_Jaconi"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Esporte_Clube_Pelotas -->
+
+    <Clube rdf:about="#Esporte_Clube_Pelotas">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <possuiUm rdf:resource="#Boca_do_Lobo"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Europa -->
 
     <owl:Thing rdf:about="#Europa">
         <rdf:type rdf:resource="#Continente"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Fernando_L&#250;cio_da_Costa -->
+
+    <Jogador rdf:about="#Fernando_L&#250;cio_da_Costa">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dataFalecimento rdf:datatype="&xsd;date">07/06/2014</dataFalecimento>
+        <altura rdf:datatype="&xsd;float">1,89</altura>
+        <dataNascimento rdf:datatype="&xsd;date">18/03/1978</dataNascimento>
+        <totalGols rdf:datatype="&xsd;int">225</totalGols>
+        <numeroCamisa rdf:datatype="&xsd;int">9</numeroCamisa>
+        <posicao rdf:datatype="&xsd;string">Atacante</posicao>
+        <peChute rdf:datatype="&xsd;string">Direito</peChute>
+        <nome rdf:datatype="&xsd;string"
+            >Fernando L&#250;cio da Costa</nome>
+        <apelido rdf:datatype="&xsd;string">Fernand&#227;o</apelido>
+        <localFalecimento rdf:resource="#Aranua"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <localNascimento rdf:resource="#Goiania"/>
+        <jogouEm rdf:resource="#Sport_Club_Internacional"/>
+    </Jogador>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Fluminense_Football_Club -->
+
+    <Clube rdf:about="#Fluminense_Football_Club">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Goiania -->
+
+    <Cidade rdf:about="#Goiania">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <capitalDe rdf:resource="#Goias"/>
+        <parteEstado rdf:resource="#Goias"/>
+    </Cidade>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Goias -->
+
+    <owl:Thing rdf:about="#Goias">
+        <rdf:type rdf:resource="#Estado"/>
+        <partePais rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Gr&#234;mio_Atl&#233;tico_Farroupilha -->
+
+    <Clube rdf:about="#Gr&#234;mio_Atl&#233;tico_Farroupilha">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <possuiUm rdf:resource="#Nicolau_Fico"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Gr&#234;mio_Esportivo_Brasil -->
+
+    <owl:Thing rdf:about="#Gr&#234;mio_Esportivo_Brasil">
+        <rdf:type rdf:resource="#Clube"/>
+        <possuiUm rdf:resource="#Bento_Freitas"/>
+        <nacionalidade rdf:resource="#Brasil"/>
     </owl:Thing>
     
 
@@ -604,6 +966,24 @@
         <possuiUm rdf:resource="#Arena"/>
         <nacionalidade rdf:resource="#Brasil"/>
     </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Iju&#237; -->
+
+    <owl:Thing rdf:about="#Iju&#237;">
+        <rdf:type rdf:resource="#Cidade"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Itaqui -->
+
+    <Cidade rdf:about="#Itaqui">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
+    </Cidade>
     
 
 
@@ -626,6 +1006,36 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#It&#225;lia"/>
     </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Nicolau_Fico -->
+
+    <owl:Thing rdf:about="#Nicolau_Fico">
+        <rdf:type rdf:resource="#Estadio"/>
+        <estaEm rdf:resource="#Pelotas"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Paulo_C&#233;sar_Carpegiani -->
+
+    <owl:Thing rdf:about="#Paulo_C&#233;sar_Carpegiani">
+        <rdf:type rdf:resource="#Jogador"/>
+        <rdf:type rdf:resource="#Treinador"/>
+        <altura rdf:datatype="&xsd;float">1,75</altura>
+        <totalGols rdf:datatype="&xsd;int">27</totalGols>
+        <dataNascimento rdf:datatype="&xsd;date">7/02/1949</dataNascimento>
+        <apelido rdf:datatype="&xsd;string">Carpa</apelido>
+        <peChute rdf:datatype="&xsd;string">Direito</peChute>
+        <nome rdf:datatype="&xsd;string"
+            >Paulo C&#233;sar Carpegiani </nome>
+        <posicao rdf:datatype="&xsd;string">Volante</posicao>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <jogouEm rdf:resource="#Clube_de_Regatas_do_Flamengo"/>
+        <localNascimento rdf:resource="#Erechim"/>
+        <jogouEm rdf:resource="#Sport_Club_Internacional"/>
+    </owl:Thing>
     
 
 
@@ -663,6 +1073,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Santos_Futebol_Clube -->
+
+    <Clube rdf:about="#Santos_Futebol_Clube">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sapucaia_do_Sul -->
 
     <Cidade rdf:about="#Sapucaia_do_Sul">
@@ -687,6 +1106,43 @@
 
     <Clube rdf:about="#Shakhtar_Donetsk">
         <rdf:type rdf:resource="&owl;Thing"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sociedade_Esportiva_Palmeiras -->
+
+    <owl:Thing rdf:about="#Sociedade_Esportiva_Palmeiras">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sport_Club_Corinthians_Paulista -->
+
+    <owl:Thing rdf:about="#Sport_Club_Corinthians_Paulista">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Sport_Club_Internacional -->
+
+    <Clube rdf:about="#Sport_Club_Internacional">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <possuiUm rdf:resource="#Beira_Rio"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+    </Clube>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#S&#227;o_Paulo_Futebol_Clube -->
+
+    <Clube rdf:about="#S&#227;o_Paulo_Futebol_Clube">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
     </Clube>
     
 
