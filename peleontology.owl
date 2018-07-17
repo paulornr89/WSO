@@ -249,24 +249,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataFim -->
-
-    <owl:DatatypeProperty rdf:about="#dataFim">
-        <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataInicio -->
-
-    <owl:DatatypeProperty rdf:about="#dataInicio">
-        <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#dataNascimento -->
 
     <owl:DatatypeProperty rdf:about="#dataNascimento">
@@ -337,15 +319,6 @@
     <owl:DatatypeProperty rdf:about="#posicao">
         <rdfs:domain rdf:resource="#Jogador"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#salario -->
-
-    <owl:DatatypeProperty rdf:about="#salario">
-        <rdfs:domain rdf:resource="#Jogador"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     
 
