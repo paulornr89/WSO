@@ -294,6 +294,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#numeroDeParticipantes -->
+
+    <owl:DatatypeProperty rdf:about="#numeroDeParticipantes">
+        <rdfs:domain rdf:resource="#Campeonato"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#peChute -->
 
     <owl:DatatypeProperty rdf:about="#peChute">
@@ -622,6 +631,8 @@
     <owl:Thing rdf:about="#Am&#233;rica_Futebol_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Independ&#234;ncia"/>
     </owl:Thing>
     
@@ -714,6 +725,7 @@
     <Clube rdf:about="#Associa&#231;&#227;o_Atl&#233;tica_Ponte_Preta">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Mois&#233;s_Lucarelli"/>
     </Clube>
     
@@ -724,6 +736,8 @@
     <Clube rdf:about="#Associa&#231;&#227;o_Chapecoense_de_Futebol">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -743,6 +757,7 @@
         <rdf:type rdf:resource="#Clube"/>
         <possuiUm rdf:resource="#Ant&#244;nio_Accioly"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -752,6 +767,7 @@
     <Clube rdf:about="#Ava&#237;_Futebol_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Ressacada"/>
     </Clube>
     
@@ -834,6 +850,7 @@
     <owl:Thing rdf:about="#Boa_Esporte_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -852,6 +869,8 @@
     <Clube rdf:about="#Botafogo_de_Futebol_e_Regatas">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Nilton_Santos"/>
     </Clube>
     
@@ -900,6 +919,27 @@
         <jogouEm rdf:resource="#Paysandu_Sport_Club"/>
         <localNascimento rdf:resource="#Rio_de_Janeiro_Cidade"/>
         <jogouEm rdf:resource="#S&#227;o_Paulo_Futebol_Clube"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Campeonato_Brasileiro -->
+
+    <owl:Thing rdf:about="#Campeonato_Brasileiro">
+        <rdf:type rdf:resource="#Liga"/>
+        <sede rdf:resource="#Brasil"/>
+        <cameaoAtual rdf:resource="#Sport_Club_Corinthians_Paulista"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Campeonato_Ga&#250;cho -->
+
+    <owl:Thing rdf:about="#Campeonato_Ga&#250;cho">
+        <rdf:type rdf:resource="#Copa"/>
+        <numeroDeParticipantes rdf:datatype="&xsd;int">12</numeroDeParticipantes>
+        <cameaoAtual rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+        <sede rdf:resource="#Rio_Grande_do_Sul"/>
     </owl:Thing>
     
 
@@ -997,6 +1037,8 @@
     <Clube rdf:about="#Cear&#225;_Sporting_Club">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Vovoz&#227;o"/>
     </Clube>
     
@@ -1016,6 +1058,7 @@
     <owl:Thing rdf:about="#Centro_Sportivo_Alagoano">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Rei_Pel&#233;"/>
     </owl:Thing>
     
@@ -1044,6 +1087,7 @@
     <owl:Thing rdf:about="#Club_Atl&#233;tico_San_Lorenzo_de_Almagro">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Argentina"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
     </owl:Thing>
     
 
@@ -1053,6 +1097,9 @@
     <owl:Thing rdf:about="#Club_de_Regatas_Vasco_da_Gama">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -1062,6 +1109,8 @@
     <owl:Thing rdf:about="#Clube_Atl&#233;tico_Mineiro">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -1071,6 +1120,8 @@
     <owl:Thing rdf:about="#Clube_Atl&#233;tico_Paranaense">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Curitiba"/>
     </owl:Thing>
     
@@ -1081,6 +1132,8 @@
     <Clube rdf:about="#Clube_Esportivo_Aimor&#233;">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -1109,6 +1162,9 @@
     <owl:Thing rdf:about="#Clube_de_Regatas_do_Flamengo">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -1144,11 +1200,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Copa_Libertadores_da_Am&#233;rica -->
+
+    <owl:Thing rdf:about="#Copa_Libertadores_da_Am&#233;rica">
+        <rdf:type rdf:resource="#Copa"/>
+        <numeroDeParticipantes rdf:datatype="&xsd;int">47</numeroDeParticipantes>
+        <sede rdf:resource="#America_Do_Sul"/>
+        <cameaoAtual rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Copa_do_Brasil -->
+
+    <owl:Thing rdf:about="#Copa_do_Brasil">
+        <rdf:type rdf:resource="#Copa"/>
+        <numeroDeParticipantes rdf:datatype="&xsd;int">91</numeroDeParticipantes>
+        <sede rdf:resource="#Brasil"/>
+        <cameaoAtual rdf:resource="#Cruzeiro_Esporte_Clube"/>
+    </owl:Thing>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Coritiba_Foot_Ball_Club -->
 
     <Clube rdf:about="#Coritiba_Foot_Ball_Club">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Couto_Pereira"/>
     </Clube>
     
@@ -1177,6 +1256,7 @@
     <owl:Thing rdf:about="#Crici&#250;ma_Esporte_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Majestoso"/>
     </owl:Thing>
     
@@ -1196,6 +1276,9 @@
     <owl:Thing rdf:about="#Cruzeiro_Esporte_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Mineir&#227;o"/>
     </owl:Thing>
     
@@ -1393,11 +1476,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Esporte_Clube_Avenida -->
+
+    <Clube rdf:about="#Esporte_Clube_Avenida">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+    </Clube>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Esporte_Clube_Bahia -->
 
     <Clube rdf:about="#Esporte_Clube_Bahia">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Fonte_Nova"/>
     </Clube>
     
@@ -1409,7 +1504,8 @@
         <rdf:type rdf:resource="#Clube"/>
         <possuiUm rdf:resource="#Alfredo_Jaconi"/>
         <nacionalidade rdf:resource="#Brasil"/>
-        <localNascimento rdf:resource="#Feliz"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -1419,6 +1515,8 @@
     <Clube rdf:about="#Esporte_Clube_Novo_Hamburgo">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Est&#225;dio_do_Vale"/>
     </Clube>
     
@@ -1430,6 +1528,7 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <possuiUm rdf:resource="#Boca_do_Lobo"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
     </Clube>
     
 
@@ -1449,8 +1548,19 @@
     <owl:Thing rdf:about="#Esporte_Clube_S&#227;o_Jos&#233;">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
         <possuiUm rdf:resource="#Passo_D&#39;Areia"/>
     </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Esporte_Clube_S&#227;o_Luiz -->
+
+    <Clube rdf:about="#Esporte_Clube_S&#227;o_Luiz">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+    </Clube>
     
 
 
@@ -1460,6 +1570,8 @@
         <rdf:type rdf:resource="#Clube"/>
         <possuiUm rdf:resource="#Barrad&#227;o"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -1570,6 +1682,7 @@
     <owl:Thing rdf:about="#Figueirense_Futebol_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Orlando_Scarpelli"/>
     </owl:Thing>
     
@@ -1590,6 +1703,8 @@
     <Clube rdf:about="#Fluminense_Football_Club">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Manoel_Schwartz"/>
     </Clube>
     
@@ -1680,6 +1795,7 @@
     <Clube rdf:about="#Goi&#225;s_Esporte_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Hail&#233;_Pinheiro"/>
     </Clube>
     
@@ -1701,6 +1817,7 @@
         <rdf:type rdf:resource="#Clube"/>
         <possuiUm rdf:resource="#Bento_Freitas"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
     </owl:Thing>
     
 
@@ -1711,6 +1828,10 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <possuiUm rdf:resource="#Arena"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -1889,6 +2010,7 @@
     <Clube rdf:about="#Londrina_Esporte_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Vitorino_Gon&#231;alves_Dias"/>
     </Clube>
     
@@ -2160,6 +2282,7 @@
     <owl:Thing rdf:about="#Oeste_Futebol_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -2196,6 +2319,8 @@
     <Clube rdf:about="#Paran&#225;_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Vila_Capanema"/>
     </Clube>
     
@@ -2324,6 +2449,7 @@
     <Clube rdf:about="#Paysandu_Sport_Club">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Curuzu"/>
     </Clube>
     
@@ -2555,6 +2681,7 @@
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
         <possuiUm rdf:resource="#Castel&#227;o"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -2584,6 +2711,9 @@
     <Clube rdf:about="#Santos_Futebol_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -2631,6 +2761,9 @@
     <owl:Thing rdf:about="#Sociedade_Esportiva_Palmeiras">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -2640,7 +2773,9 @@
     <Clube rdf:about="#Sociedade_Esportiva_e_Recreativa_Caxias_do_Sul">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
         <possuiUm rdf:resource="#Centen&#225;rio"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -2668,6 +2803,9 @@
     <owl:Thing rdf:about="#Sport_Club_Corinthians_Paulista">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_Libertadores_da_Am&#233;rica"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </owl:Thing>
     
 
@@ -2678,6 +2816,9 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <possuiUm rdf:resource="#Beira_Rio"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -2687,6 +2828,8 @@
     <owl:Thing rdf:about="#Sport_Club_do_Recife">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#Ilha_do_Retiro"/>
     </owl:Thing>
     
@@ -2724,6 +2867,8 @@
     <Clube rdf:about="#S&#227;o_Paulo_Futebol_Clube">
         <rdf:type rdf:resource="&owl;Thing"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Brasileiro"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
     </Clube>
     
 
@@ -2772,6 +2917,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Veran&#243;polis_Esporte_Clube_Recreativo_e_Cultural -->
+
+    <owl:Thing rdf:about="#Veran&#243;polis_Esporte_Clube_Recreativo_e_Cultural">
+        <rdf:type rdf:resource="#Clube"/>
+        <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Campeonato_Ga&#250;cho"/>
+    </owl:Thing>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#Viam&#227;o -->
 
     <owl:Thing rdf:about="#Viam&#227;o">
@@ -2795,6 +2950,7 @@
     <owl:Thing rdf:about="#Vila_Nova_Futebol_Clube">
         <rdf:type rdf:resource="#Clube"/>
         <nacionalidade rdf:resource="#Brasil"/>
+        <participaDe rdf:resource="#Copa_do_Brasil"/>
         <possuiUm rdf:resource="#On&#233;sio_Brasileiro_Alvarenga"/>
     </owl:Thing>
     
