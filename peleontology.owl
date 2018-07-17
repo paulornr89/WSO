@@ -38,6 +38,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#cameaoAtual -->
+
+    <owl:ObjectProperty rdf:about="#cameaoAtual">
+        <rdfs:domain rdf:resource="#Campeonato"/>
+        <rdfs:range rdf:resource="#Clube"/>
+        <rdfs:range rdf:resource="#ClubeNacional"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#capitalDe -->
 
     <owl:ObjectProperty rdf:about="#capitalDe">
@@ -161,11 +171,10 @@
     <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#sede -->
 
     <owl:ObjectProperty rdf:about="#sede">
-        <rdfs:domain rdf:resource="#Campeonato"/>
         <rdfs:range rdf:resource="#Cidade"/>
-        <rdfs:domain rdf:resource="#Clube"/>
         <rdfs:range rdf:resource="#Continente"/>
         <rdfs:range rdf:resource="#Estado"/>
+        <rdfs:domain rdf:resource="#Evento"/>
         <rdfs:range rdf:resource="#Pais"/>
     </owl:ObjectProperty>
     
@@ -206,7 +215,7 @@
 
     <owl:DatatypeProperty rdf:about="#altura">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
     </owl:DatatypeProperty>
     
 
@@ -235,7 +244,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataFalecimento">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -244,7 +253,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataFim">
         <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -253,7 +262,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataInicio">
         <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -262,7 +271,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataNascimento">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:range rdf:resource="&xsd;date"/>
     </owl:DatatypeProperty>
     
 
@@ -289,7 +298,7 @@
 
     <owl:DatatypeProperty rdf:about="#nome">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;Name"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -298,7 +307,7 @@
 
     <owl:DatatypeProperty rdf:about="#numeroCamisa">
         <rdfs:domain rdf:resource="#Jogador"/>
-        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
     </owl:DatatypeProperty>
     
 
@@ -308,15 +317,6 @@
     <owl:DatatypeProperty rdf:about="#peChute">
         <rdfs:domain rdf:resource="#Jogador"/>
         <rdfs:range rdf:resource="&xsd;string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/cpte.paulo/ontologies/2018/6/peleontology#peso -->
-
-    <owl:DatatypeProperty rdf:about="#peso">
-        <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     
 
@@ -807,6 +807,7 @@
 
     <Clube rdf:about="#Bayern_de_Munique">
         <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Alemanha"/>
     </Clube>
     
 
@@ -915,7 +916,7 @@
         <numeroCamisa rdf:datatype="&xsd;int">12</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">6</totalGols>
         <nome rdf:datatype="&xsd;string"
-            >Bruno Cort&#234;s Barbosa </nome>
+            >Bruno Cort&#234;s Barbosa</nome>
         <apelido rdf:datatype="&xsd;string">Cortez</apelido>
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
         <posicao rdf:datatype="&xsd;string"
@@ -1281,13 +1282,12 @@
 
     <owl:Thing rdf:about="#Douglas_Costa">
         <rdf:type rdf:resource="#Jogador"/>
-        <totalGols rdf:datatype="&xsd;int"></totalGols>
         <altura rdf:datatype="&xsd;float">1,70</altura>
         <numeroCamisa rdf:datatype="&xsd;int">11</numeroCamisa>
         <dataNascimento rdf:datatype="&xsd;date">24/09/1990</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">72</totalGols>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
-        <apelido rdf:datatype="&xsd;int">Douglas Costa</apelido>
+        <apelido rdf:datatype="&xsd;string">Douglas Costa</apelido>
         <nome rdf:datatype="&xsd;string"
             >Douglas Costa de Souza</nome>
         <peChute rdf:datatype="&xsd;string">esquerdo</peChute>
@@ -1312,7 +1312,7 @@
         <dataNascimento rdf:datatype="&xsd;date">18/02/1982</dataNascimento>
         <apelido rdf:datatype="&xsd;string">Doga10</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Douglas dos Santos </nome>
+            >Douglas dos Santos</nome>
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
         <apelido rdf:datatype="&xsd;string">Maestro Pifador</apelido>
         <posicao rdf:datatype="&xsd;string">Meia</posicao>
@@ -1529,7 +1529,7 @@
         <apelido rdf:datatype="&xsd;string">Cebolinha</apelido>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <nome rdf:datatype="&xsd;string"
-            >Everton Sousa Soares </nome>
+            >Everton Sousa Soares</nome>
         <posicao rdf:datatype="&xsd;string">Ponteiro</posicao>
         <nacionalidade rdf:resource="#Brasil"/>
         <estajogandoEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
@@ -1832,7 +1832,7 @@
         <apelido rdf:datatype="&xsd;string">Cruel</apelido>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <nome rdf:datatype="&xsd;string"
-            >Jael Ferreira Vieira </nome>
+            >Jael Ferreira Vieira</nome>
         <nacionalidade rdf:resource="#Brasil"/>
         <jogouEm rdf:resource="#Clube_Atl&#233;tico_Mineiro"/>
         <jogouEm rdf:resource="#Clube_de_Regatas_do_Flamengo"/>
@@ -1858,7 +1858,7 @@
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
         <apelido rdf:datatype="&xsd;string">Jardel</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Mario Jardel de Almeida Ribeiro </nome>
+            >Mario Jardel de Almeida Ribeiro</nome>
         <nacionalidade rdf:resource="#Brasil"/>
         <jogouEm rdf:resource="#Club_de_Regatas_Vasco_da_Gama"/>
         <jogouEm rdf:resource="#Crici&#250;ma_Esporte_Clube"/>
@@ -1889,7 +1889,7 @@
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <posicao rdf:datatype="&xsd;string">Lateral Direito</posicao>
         <nome rdf:datatype="&xsd;string"
-            >Leonardo da Silva Moura </nome>
+            >Leonardo da Silva Moura</nome>
         <apelido rdf:datatype="&xsd;string">L&#233;o Moura</apelido>
         <jogouEm rdf:resource="#Botafogo_de_Futebol_e_Regatas"/>
         <nacionalidade rdf:resource="#Brasil"/>
@@ -1934,7 +1934,7 @@
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <apelido rdf:datatype="&xsd;string">Luan</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Luan Guilherme de Jesus Vieira </nome>
+            >Luan Guilherme de Jesus Vieira</nome>
         <nacionalidade rdf:resource="#Brasil"/>
         <estajogandoEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
         <jogouEm rdf:resource="#Sele&#231;&#227;o_Brasileira"/>
@@ -1952,7 +1952,7 @@
         <altura rdf:datatype="&xsd;float">1,84</altura>
         <apelido rdf:datatype="&xsd;string">Felip&#227;o</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Luiz Felipe Scolari </nome>
+            >Luiz Felipe Scolari</nome>
         <posicao rdf:datatype="&xsd;string">Zagueiro</posicao>
         <nacionalidade rdf:resource="#Brasil"/>
         <jogouEm rdf:resource="#Centro_Sportivo_Alagoano"/>
@@ -1992,7 +1992,7 @@
         <peChute rdf:datatype="&xsd;string">Ambidestro</peChute>
         <apelido rdf:datatype="&xsd;string">Capit&#227;o</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Maicon Thiago Pereira de Souza </nome>
+            >Maicon Thiago Pereira de Souza</nome>
         <posicao rdf:datatype="&xsd;string">Volante</posicao>
         <jogouEm rdf:resource="#Botafogo_de_Futebol_e_Regatas"/>
         <nacionalidade rdf:resource="#Brasil"/>
@@ -2066,7 +2066,7 @@
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
         <apelido rdf:datatype="&xsd;string">Marinho</apelido>
         <nome rdf:datatype="&xsd;string"
-            >M&#225;rio S&#233;rgio Santos Costa </nome>
+            >M&#225;rio S&#233;rgio Santos Costa</nome>
         <posicao rdf:datatype="&xsd;string">Ponta</posicao>
         <nacionalidade rdf:resource="#Brasil"/>
         <jogouEm rdf:resource="#Cear&#225;_Sporting_Club"/>
@@ -2329,7 +2329,7 @@
     <Jogador rdf:about="#Paulo_Nunes">
         <rdf:type rdf:resource="&owl;Thing"/>
         <altura rdf:datatype="&xsd;float">1,74</altura>
-        <posicao rdf:datatype="&xsd;int">187</posicao>
+        <totalGols rdf:datatype="&xsd;int">187</totalGols>
         <dataNascimento rdf:datatype="&xsd;date">30/10/1971</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">7</numeroCamisa>
         <nome rdf:datatype="&xsd;string"
@@ -2368,7 +2368,7 @@
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <apelido rdf:datatype="&xsd;string">Geromito</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Pedro Tonon Geromel </nome>
+            >Pedro Tonon Geromel</nome>
         <posicao rdf:datatype="&xsd;string">Zagueiro</posicao>
         <nacionalidade rdf:resource="#Brasil"/>
         <estajogandoEm rdf:resource="#Gr&#234;mio_Foot-Ball_Porto_Alegrense"/>
@@ -2399,7 +2399,7 @@
         <dataNascimento rdf:datatype="&xsd;date">23/10/1940</dataNascimento>
         <peChute rdf:datatype="&xsd;string">Ambidestro</peChute>
         <nome rdf:datatype="&xsd;string"
-            >Edson Arantes do Nascimento </nome>
+            >Edson Arantes do Nascimento</nome>
         <posicao rdf:datatype="&xsd;string">Meia-Atacante</posicao>
         <apelido rdf:datatype="&xsd;string">Pel&#233;</apelido>
         <nacionalidade rdf:resource="#Brasil"/>
@@ -2487,9 +2487,9 @@
         <numeroCamisa rdf:datatype="&xsd;int">7</numeroCamisa>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <posicao rdf:datatype="&xsd;string">Ponta Direita</posicao>
-        <altura rdf:datatype="&xsd;string">Renato Ga&#250;cho</altura>
+        <apelido rdf:datatype="&xsd;string">Renato Ga&#250;cho</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Renato Portaluppi </nome>
+            >Renato Portaluppi</nome>
         <jogouEm rdf:resource="#Botafogo_de_Futebol_e_Regatas"/>
         <nacionalidade rdf:resource="#Brasil"/>
         <jogouEm rdf:resource="#Clube_Atl&#233;tico_Mineiro"/>
@@ -2865,7 +2865,7 @@
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
         <apelido rdf:datatype="&xsd;string">Kannemito</apelido>
         <nome rdf:datatype="&xsd;string"
-            >Walter Kannemann </nome>
+            >Walter Kannemann</nome>
         <posicao rdf:datatype="&xsd;string">Zagueiro</posicao>
         <nacionalidade rdf:resource="#Argentina"/>
         <jogouEm rdf:resource="#Atlas_F&#250;tbol_Club"/>
