@@ -215,7 +215,7 @@
 
     <owl:DatatypeProperty rdf:about="#altura">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     
 
@@ -244,7 +244,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataFalecimento">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -253,7 +253,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataFim">
         <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -262,7 +262,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataInicio">
         <rdfs:domain rdf:resource="#Evento"/>
-        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -271,7 +271,7 @@
 
     <owl:DatatypeProperty rdf:about="#dataNascimento">
         <rdfs:domain rdf:resource="#Pessoa"/>
-        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
@@ -404,7 +404,6 @@
 
     <owl:Class rdf:about="#ClubeNacional">
         <rdfs:subClassOf rdf:resource="#AssociacaoEsportiva"/>
-        <owl:disjointWith rdf:resource="#Clube"/>
     </owl:Class>
     
 
@@ -519,8 +518,8 @@
 
     <owl:Thing rdf:about="#Abigail_Concei&#231;&#227;o_de_Souza">
         <rdf:type rdf:resource="#Jogador"/>
-        <dataNascimento rdf:datatype="&xsd;date">12/10/1921</dataNascimento>
-        <dataFalecimento rdf:datatype="&xsd;date">27/12/2007</dataFalecimento>
+        <dataNascimento rdf:datatype="&xsd;string">12/10/1921</dataNascimento>
+        <dataFalecimento rdf:datatype="&xsd;string">27/12/2007</dataFalecimento>
         <nome rdf:datatype="&xsd;string"
             >Abigail Concei&#231;&#227;o de Souza</nome>
         <posicao rdf:datatype="&xsd;string"
@@ -545,8 +544,8 @@
 
     <Jogador rdf:about="#Ada&#237;lton_Martins_Bolzan">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,73</altura>
-        <dataNascimento rdf:datatype="&xsd;date">24/01/1977</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.73</altura>
+        <dataNascimento rdf:datatype="&xsd;string">24/01/1977</dataNascimento>
         <nome rdf:datatype="&xsd;string"
             >Ada&#237;lton Martins Bolzan</nome>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
@@ -573,8 +572,8 @@
 
     <Jogador rdf:about="#Alan_Ruschel">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,74</altura>
-        <dataNascimento rdf:datatype="&xsd;date">23/08/1989</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.74</altura>
+        <dataNascimento rdf:datatype="&xsd;string">23/08/1989</dataNascimento>
         <nome rdf:datatype="&xsd;string"
             >Alan Luciano Ruschel</nome>
         <peChute rdf:datatype="&xsd;string">Canhoto</peChute>
@@ -718,8 +717,8 @@
     <Jogador rdf:about="#Arilson_Gilberto_da_Costa">
         <rdf:type rdf:resource="#Treinador"/>
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,77</altura>
-        <dataNascimento rdf:datatype="&xsd;date">11/06/1973</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.77</altura>
+        <dataNascimento rdf:datatype="&xsd;string">11/06/1973</dataNascimento>
         <apelido rdf:datatype="&xsd;string">Ar&#237;lson</apelido>
         <nome rdf:datatype="&xsd;string"
             >Ar&#237;lson Gilberto da Costa</nome>
@@ -911,8 +910,8 @@
 
     <owl:Thing rdf:about="#Bruno_Cort&#234;s_Barbosa">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,78</altura>
-        <dataNascimento rdf:datatype="&xsd;date">11/03/1987</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.78</altura>
+        <dataNascimento rdf:datatype="&xsd;string">11/03/1987</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">12</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">6</totalGols>
         <nome rdf:datatype="&xsd;string"
@@ -954,8 +953,8 @@
 
     <owl:Thing rdf:about="#Carlos_Alberto_Rodrigues_Gavi&#227;o">
         <rdf:type rdf:resource="#Jogador"/>
-        <dataNascimento rdf:datatype="&xsd;date">02/02/1980</dataNascimento>
-        <altura rdf:datatype="&xsd;float">1,80</altura>
+        <dataNascimento rdf:datatype="&xsd;string">02/02/1980</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.80</altura>
         <totalGols rdf:datatype="&xsd;int">9</totalGols>
         <nome rdf:datatype="&xsd;string"
             >Carlos Alberto Rodrigues Gavi&#227;o</nome>
@@ -976,8 +975,8 @@
 
     <Jogador rdf:about="#Carlos_Miguel">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,77</altura>
-        <dataNascimento rdf:datatype="&xsd;date">12/06/1972</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.77</altura>
+        <dataNascimento rdf:datatype="&xsd;string">12/06/1972</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">18</totalGols>
         <apelido rdf:datatype="&xsd;string">Carlos Miguel</apelido>
         <nome rdf:datatype="&xsd;string"
@@ -1145,8 +1144,8 @@
 
     <owl:Thing rdf:about="#Cl&#225;udio_Pitbull">
         <rdf:type rdf:resource="#Jogador"/>
-        <dataNascimento rdf:datatype="&xsd;date">08/01/1982</dataNascimento>
-        <altura rdf:datatype="&xsd;float">1,73</altura>
+        <dataNascimento rdf:datatype="&xsd;string">08/01/1982</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.73</altura>
         <totalGols rdf:datatype="&xsd;int">55</totalGols>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
         <nome rdf:datatype="&xsd;string"
@@ -1252,8 +1251,8 @@
     <Jogador rdf:about="#Danrlei">
         <rdf:type rdf:resource="&owl;Thing"/>
         <numeroCamisa rdf:datatype="&xsd;int">1</numeroCamisa>
-        <altura rdf:datatype="&xsd;float">1,85</altura>
-        <dataNascimento rdf:datatype="&xsd;date">18/04/1973</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.85</altura>
+        <dataNascimento rdf:datatype="&xsd;string">18/04/1973</dataNascimento>
         <apelido rdf:datatype="&xsd;string">Danrlei</apelido>
         <nome rdf:datatype="&xsd;string"
             >Danrlei de Deus Hinterholz</nome>
@@ -1282,9 +1281,9 @@
 
     <owl:Thing rdf:about="#Douglas_Costa">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,70</altura>
+        <altura rdf:datatype="&xsd;float">1.70</altura>
         <numeroCamisa rdf:datatype="&xsd;int">11</numeroCamisa>
-        <dataNascimento rdf:datatype="&xsd;date">24/09/1990</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">24/09/1990</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">72</totalGols>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
         <apelido rdf:datatype="&xsd;string">Douglas Costa</apelido>
@@ -1306,10 +1305,10 @@
 
     <owl:Thing rdf:about="#Douglas_dos_Santos">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,75</altura>
+        <altura rdf:datatype="&xsd;float">1.75</altura>
         <numeroCamisa rdf:datatype="&xsd;int">10</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">125</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">18/02/1982</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">18/02/1982</dataNascimento>
         <apelido rdf:datatype="&xsd;string">Doga10</apelido>
         <nome rdf:datatype="&xsd;string"
             >Douglas dos Santos</nome>
@@ -1332,8 +1331,8 @@
     <Treinador rdf:about="#Dunga">
         <rdf:type rdf:resource="#Jogador"/>
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,76</altura>
-        <dataNascimento rdf:datatype="&xsd;date">31/10/1963</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.76</altura>
+        <dataNascimento rdf:datatype="&xsd;string">31/10/1963</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">47</totalGols>
         <numeroCamisa rdf:datatype="&xsd;int">5</numeroCamisa>
         <nome rdf:datatype="&xsd;string"
@@ -1357,8 +1356,8 @@
         <rdf:type rdf:resource="&owl;Thing"/>
         <numeroCamisa rdf:datatype="&xsd;int">1</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">1</totalGols>
-        <altura rdf:datatype="&xsd;float">1,92</altura>
-        <dataNascimento rdf:datatype="&xsd;date">11/01/1979</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.92</altura>
+        <dataNascimento rdf:datatype="&xsd;string">11/01/1979</dataNascimento>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <apelido rdf:datatype="&xsd;string">Edu</apelido>
         <nome rdf:datatype="&xsd;string">Eduardo Martini</nome>
@@ -1376,8 +1375,8 @@
 
     <Jogador rdf:about="#Emerson_Ferreira_da_Rosa">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <dataNascimento rdf:datatype="&xsd;date">04/04/1976</dataNascimento>
-        <altura rdf:datatype="&xsd;float">1,84</altura>
+        <dataNascimento rdf:datatype="&xsd;string">04/04/1976</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.84</altura>
         <totalGols rdf:datatype="&xsd;int">45</totalGols>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <apelido rdf:datatype="&xsd;string">Puma</apelido>
@@ -1522,9 +1521,9 @@
 
     <owl:Thing rdf:about="#Everton_Sousa_Soares">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,74</altura>
+        <altura rdf:datatype="&xsd;float">1.74</altura>
         <numeroCamisa rdf:datatype="&xsd;int">11</numeroCamisa>
-        <dataNascimento rdf:datatype="&xsd;date">22/03/1996</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">22/03/1996</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">36</totalGols>
         <apelido rdf:datatype="&xsd;string">Cebolinha</apelido>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
@@ -1551,9 +1550,9 @@
 
     <Jogador rdf:about="#Fernando_L&#250;cio_da_Costa">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <dataFalecimento rdf:datatype="&xsd;date">07/06/2014</dataFalecimento>
-        <altura rdf:datatype="&xsd;float">1,89</altura>
-        <dataNascimento rdf:datatype="&xsd;date">18/03/1978</dataNascimento>
+        <dataFalecimento rdf:datatype="&xsd;string">07/06/2014</dataFalecimento>
+        <altura rdf:datatype="&xsd;float">1.89</altura>
+        <dataNascimento rdf:datatype="&xsd;string">18/03/1978</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">225</totalGols>
         <numeroCamisa rdf:datatype="&xsd;int">9</numeroCamisa>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
@@ -1573,9 +1572,9 @@
 
     <owl:Thing rdf:about="#Fernando_Prass">
         <rdf:type rdf:resource="#Jogador"/>
-        <dataNascimento rdf:datatype="&xsd;date">09/06/1978</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">09/06/1978</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">1</numeroCamisa>
-        <altura rdf:datatype="&xsd;float">1,91</altura>
+        <altura rdf:datatype="&xsd;float">1.91</altura>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <nome rdf:datatype="&xsd;string"
             >Fernando B&#252;ttenbender Prass</nome>
@@ -1668,8 +1667,8 @@
 
     <owl:Thing rdf:about="#F&#225;bio_Rochemback">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,85</altura>
-        <dataNascimento rdf:datatype="&xsd;date">10/12/1981</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.85</altura>
+        <dataNascimento rdf:datatype="&xsd;string">10/12/1981</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">47</totalGols>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <nome rdf:datatype="&xsd;string"
@@ -1824,9 +1823,9 @@
 
     <owl:Thing rdf:about="#Jael">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,86</altura>
+        <altura rdf:datatype="&xsd;float">1.86</altura>
         <totalGols rdf:datatype="&xsd;int">117</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">30/10/1988</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">30/10/1988</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">9</numeroCamisa>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
         <apelido rdf:datatype="&xsd;string">Cruel</apelido>
@@ -1851,9 +1850,9 @@
 
     <Jogador rdf:about="#Jardel">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,88</altura>
+        <altura rdf:datatype="&xsd;float">1.88</altura>
         <numeroCamisa rdf:datatype="&xsd;int">16</numeroCamisa>
-        <dataNascimento rdf:datatype="&xsd;date">18/09/1973</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">18/09/1973</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">446</totalGols>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
         <apelido rdf:datatype="&xsd;string">Jardel</apelido>
@@ -1882,9 +1881,9 @@
 
     <owl:Thing rdf:about="#Leonardo_da_Silva_Moura">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,76</altura>
+        <altura rdf:datatype="&xsd;float">1.76</altura>
         <numeroCamisa rdf:datatype="&xsd;int">2</numeroCamisa>
-        <dataNascimento rdf:datatype="&xsd;date">23/10/1978</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">23/10/1978</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">97</totalGols>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <posicao rdf:datatype="&xsd;string">Lateral Direito</posicao>
@@ -1926,8 +1925,8 @@
 
     <owl:Thing rdf:about="#Luan">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,80</altura>
-        <dataNascimento rdf:datatype="&xsd;date">27/03/1993</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.80</altura>
+        <dataNascimento rdf:datatype="&xsd;string">27/03/1993</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">7</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">77</totalGols>
         <posicao rdf:datatype="&xsd;string">Atacante</posicao>
@@ -1948,8 +1947,8 @@
     <Jogador rdf:about="#Luiz_Felipe_Scolari">
         <rdf:type rdf:resource="#Treinador"/>
         <rdf:type rdf:resource="&owl;Thing"/>
-        <dataNascimento rdf:datatype="&xsd;date">09/11/1948</dataNascimento>
-        <altura rdf:datatype="&xsd;float">1,84</altura>
+        <dataNascimento rdf:datatype="&xsd;string">09/11/1948</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.84</altura>
         <apelido rdf:datatype="&xsd;string">Felip&#227;o</apelido>
         <nome rdf:datatype="&xsd;string"
             >Luiz Felipe Scolari</nome>
@@ -1985,8 +1984,8 @@
 
     <Jogador rdf:about="#Maicon">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,84</altura>
-        <dataNascimento rdf:datatype="&xsd;date">14/09/1985</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.84</altura>
+        <dataNascimento rdf:datatype="&xsd;string">14/09/1985</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">35</totalGols>
         <numeroCamisa rdf:datatype="&xsd;int">8</numeroCamisa>
         <peChute rdf:datatype="&xsd;string">Ambidestro</peChute>
@@ -2043,8 +2042,8 @@
     <Jogador rdf:about="#Marcelo_Grohe">
         <rdf:type rdf:resource="&owl;Thing"/>
         <numeroCamisa rdf:datatype="&xsd;int">1</numeroCamisa>
-        <altura rdf:datatype="&xsd;float">1,88</altura>
-        <dataNascimento rdf:datatype="&xsd;date">13/01/1987</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.88</altura>
+        <dataNascimento rdf:datatype="&xsd;string">13/01/1987</dataNascimento>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <posicao rdf:datatype="&xsd;string">Goleiro</posicao>
         <nome rdf:datatype="&xsd;string">Marcelo Grohe</nome>
@@ -2059,8 +2058,8 @@
 
     <Jogador rdf:about="#Marinho">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,69</altura>
-        <dataNascimento rdf:datatype="&xsd;date">29/05/1990</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.69</altura>
+        <dataNascimento rdf:datatype="&xsd;string">29/05/1990</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">39</totalGols>
         <numeroCamisa rdf:datatype="&xsd;int">70</numeroCamisa>
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
@@ -2308,9 +2307,9 @@
     <owl:Thing rdf:about="#Paulo_C&#233;sar_Carpegiani">
         <rdf:type rdf:resource="#Jogador"/>
         <rdf:type rdf:resource="#Treinador"/>
-        <altura rdf:datatype="&xsd;float">1,75</altura>
+        <altura rdf:datatype="&xsd;float">1.75</altura>
         <totalGols rdf:datatype="&xsd;int">27</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">7/02/1949</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">7/02/1949</dataNascimento>
         <apelido rdf:datatype="&xsd;string">Carpa</apelido>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <nome rdf:datatype="&xsd;string"
@@ -2328,9 +2327,9 @@
 
     <Jogador rdf:about="#Paulo_Nunes">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,74</altura>
+        <altura rdf:datatype="&xsd;float">1.74</altura>
         <totalGols rdf:datatype="&xsd;int">187</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">30/10/1971</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">30/10/1971</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">7</numeroCamisa>
         <nome rdf:datatype="&xsd;string"
             >Ar&#237;lson de Paula Nunes</nome>
@@ -2361,9 +2360,9 @@
 
     <owl:Thing rdf:about="#Pedro_Geromel">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,90</altura>
+        <altura rdf:datatype="&xsd;float">1.90</altura>
         <totalGols rdf:datatype="&xsd;int">16</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">21/09/1975</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">21/09/1975</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">3</numeroCamisa>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
         <apelido rdf:datatype="&xsd;string">Geromito</apelido>
@@ -2382,7 +2381,7 @@
 
     <owl:Thing rdf:about="#Pelotas">
         <rdf:type rdf:resource="#Cidade"/>
-        <area rdf:datatype="&xsd;double">1608,768</area>
+        <area rdf:datatype="&xsd;double">1608.768</area>
         <populacao rdf:datatype="&xsd;double">343651.0</populacao>
         <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
     </owl:Thing>
@@ -2393,10 +2392,10 @@
 
     <owl:Thing rdf:about="#Pel&#233;">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,70</altura>
+        <altura rdf:datatype="&xsd;float">1.70</altura>
         <numeroCamisa rdf:datatype="&xsd;int">10</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">1232</totalGols>
-        <dataNascimento rdf:datatype="&xsd;date">23/10/1940</dataNascimento>
+        <dataNascimento rdf:datatype="&xsd;string">23/10/1940</dataNascimento>
         <peChute rdf:datatype="&xsd;string">Ambidestro</peChute>
         <nome rdf:datatype="&xsd;string"
             >Edson Arantes do Nascimento</nome>
@@ -2451,7 +2450,7 @@
     <Cidade rdf:about="#Porto_Alegre">
         <rdf:type rdf:resource="&owl;Thing"/>
         <populacao rdf:datatype="&xsd;double">1484941.0</populacao>
-        <area rdf:datatype="&xsd;double">496,682</area>
+        <area rdf:datatype="&xsd;double">496.682</area>
         <capitalDe rdf:resource="#Rio_Grande_do_Sul"/>
         <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
     </Cidade>
@@ -2481,8 +2480,8 @@
     <owl:Thing rdf:about="#Renato_Ga&#250;cho">
         <rdf:type rdf:resource="#Jogador"/>
         <rdf:type rdf:resource="#Treinador"/>
-        <dataNascimento rdf:datatype="&xsd;date">09/09/1962</dataNascimento>
-        <altura rdf:datatype="&xsd;float">1,84</altura>
+        <dataNascimento rdf:datatype="&xsd;string">09/09/1962</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.84</altura>
         <totalGols rdf:datatype="&xsd;int">194</totalGols>
         <numeroCamisa rdf:datatype="&xsd;int">7</numeroCamisa>
         <peChute rdf:datatype="&xsd;string">Direito</peChute>
@@ -2526,7 +2525,7 @@
     <owl:Thing rdf:about="#Rio_Grande_do_Sul">
         <rdf:type rdf:resource="#Estado"/>
         <populacao rdf:datatype="&xsd;double">1.12865E7</populacao>
-        <area rdf:datatype="&xsd;double">281730,323</area>
+        <area rdf:datatype="&xsd;double">281730.323</area>
         <partePais rdf:resource="#Brasil"/>
     </owl:Thing>
     
@@ -2600,7 +2599,7 @@
 
     <Cidade rdf:about="#Santiago">
         <rdf:type rdf:resource="&owl;Thing"/>
-        <area rdf:datatype="&xsd;double">2413,075</area>
+        <area rdf:datatype="&xsd;double">2413.075</area>
         <populacao rdf:datatype="&xsd;double">50622.0</populacao>
         <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
     </Cidade>
@@ -2621,7 +2620,7 @@
     <Cidade rdf:about="#Sapucaia_do_Sul">
         <rdf:type rdf:resource="&owl;Thing"/>
         <populacao rdf:datatype="&xsd;double">137750.0</populacao>
-        <area rdf:datatype="&xsd;double">58,31</area>
+        <area rdf:datatype="&xsd;double">58.31</area>
         <parteEstado rdf:resource="#Rio_Grande_do_Sul"/>
     </Cidade>
     
@@ -2649,6 +2648,7 @@
 
     <Clube rdf:about="#Shakhtar_Donetsk">
         <rdf:type rdf:resource="&owl;Thing"/>
+        <nacionalidade rdf:resource="#Ucrania"/>
     </Clube>
     
 
@@ -2858,8 +2858,8 @@
 
     <owl:Thing rdf:about="#Walter_Kannemann">
         <rdf:type rdf:resource="#Jogador"/>
-        <altura rdf:datatype="&xsd;float">1,84</altura>
-        <dataNascimento rdf:datatype="&xsd;date">14/03/1991</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.84</altura>
+        <dataNascimento rdf:datatype="&xsd;string">14/03/1991</dataNascimento>
         <numeroCamisa rdf:datatype="&xsd;int">4</numeroCamisa>
         <totalGols rdf:datatype="&xsd;int">8</totalGols>
         <peChute rdf:datatype="&xsd;string">Esquerdo</peChute>
@@ -2881,9 +2881,9 @@
     <Treinador rdf:about="#&#202;nio_Andrade">
         <rdf:type rdf:resource="#Jogador"/>
         <rdf:type rdf:resource="&owl;Thing"/>
-        <altura rdf:datatype="&xsd;float">1,78</altura>
-        <dataFalecimento rdf:datatype="&xsd;date">22/01/1997</dataFalecimento>
-        <dataNascimento rdf:datatype="&xsd;date">31/01/1928</dataNascimento>
+        <altura rdf:datatype="&xsd;float">1.78</altura>
+        <dataFalecimento rdf:datatype="&xsd;string">22/01/1997</dataFalecimento>
+        <dataNascimento rdf:datatype="&xsd;string">31/01/1928</dataNascimento>
         <totalGols rdf:datatype="&xsd;int">36</totalGols>
         <posicao rdf:datatype="&xsd;string">Meia</posicao>
         <apelido rdf:datatype="&xsd;string">Seu &#202;nio</apelido>
