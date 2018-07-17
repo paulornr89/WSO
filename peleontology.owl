@@ -40,9 +40,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/peleontology#cameaoAtual -->
+    <!-- http://www.semanticweb.org/ontologies/peleontology#campeaoAtual -->
 
-    <owl:ObjectProperty rdf:about="&peleontology1;cameaoAtual">
+    <owl:ObjectProperty rdf:about="&peleontology1;campeaoAtual">
         <rdfs:domain rdf:resource="&peleontology1;Campeonato"/>
         <rdfs:range rdf:resource="&peleontology1;Clube"/>
         <rdfs:range rdf:resource="&peleontology1;ClubeNacional"/>
@@ -963,7 +963,7 @@
         <rdf:type rdf:resource="&peleontology1;Liga"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <peleontology1:sede rdf:resource="&peleontology1;Brasil"/>
-        <peleontology1:cameaoAtual rdf:resource="&peleontology1;Sport_Club_Corinthians_Paulista"/>
+        <peleontology1:campeaoAtual rdf:resource="&peleontology1;Sport_Club_Corinthians_Paulista"/>
     </owl:Thing>
     
 
@@ -974,7 +974,7 @@
         <rdf:type rdf:resource="&peleontology1;Copa"/>
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <peleontology1:numeroDeParticipantes rdf:datatype="&xsd;int">12</peleontology1:numeroDeParticipantes>
-        <peleontology1:cameaoAtual rdf:resource="&peleontology1;Grêmio_Foot-Ball_Porto_Alegrense"/>
+        <peleontology1:campeaoAtual rdf:resource="&peleontology1;Grêmio_Foot-Ball_Porto_Alegrense"/>
         <peleontology1:sede rdf:resource="&peleontology1;Rio_Grande_do_Sul"/>
     </owl:Thing>
     
@@ -1262,7 +1262,7 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <peleontology1:numeroDeParticipantes rdf:datatype="&xsd;int">47</peleontology1:numeroDeParticipantes>
         <peleontology1:sede rdf:resource="&peleontology1;America_Do_Sul"/>
-        <peleontology1:cameaoAtual rdf:resource="&peleontology1;Grêmio_Foot-Ball_Porto_Alegrense"/>
+        <peleontology1:campeaoAtual rdf:resource="&peleontology1;Grêmio_Foot-Ball_Porto_Alegrense"/>
     </owl:Thing>
     
 
@@ -1274,7 +1274,7 @@
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
         <peleontology1:numeroDeParticipantes rdf:datatype="&xsd;int">91</peleontology1:numeroDeParticipantes>
         <peleontology1:sede rdf:resource="&peleontology1;Brasil"/>
-        <peleontology1:cameaoAtual rdf:resource="&peleontology1;Cruzeiro_Esporte_Clube"/>
+        <peleontology1:campeaoAtual rdf:resource="&peleontology1;Cruzeiro_Esporte_Clube"/>
     </owl:Thing>
     
 
